@@ -4,12 +4,11 @@
 #include <iostream>
 #include <windows.h>
 #include <locale>
+#include "array.h"
 
 class CoreApp {
-    short mainMenu();
-    short sortMenu();
-    short elemIndex();
-    void waitForAction(short);
+    inline short mainMenu();
+    inline void waitForAction();
 public:
     CoreApp();
     int exec();
