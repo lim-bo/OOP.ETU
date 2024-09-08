@@ -30,7 +30,7 @@ number Array::mean() {
     for (unsigned i = 0; i < len; i++) {
         meanValue += values[i];
     }
-    return meanValue / static_cast<number>(len);
+    return meanValue / len;
 }
 
 number Array::standartDeviation() {
@@ -39,8 +39,8 @@ number Array::standartDeviation() {
     for (unsigned i = 0; i < len; i++) {
         temp += (values[i] - meanValue) * (values[i] - meanValue);
     }
-    temp /= static_cast<number>(len) - 1;
-    temp = static_cast<number>(sqrt(static_cast<double>(temp)));
+    temp /= len - 1;
+    temp = num_sqrt(temp);
     return temp;
 }
 
