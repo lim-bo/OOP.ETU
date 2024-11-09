@@ -2,7 +2,7 @@
 #define NUMBER_H
 
 #include "math.h"
-typedef double number;
+typedef Complex number;
 
 number num_sqrt(number val);
 
